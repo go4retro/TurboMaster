@@ -9029,13 +9029,14 @@ Based on the following sources:
 01 = Charactor ROM (bottom half unused)
 10 = KERNAL ROM 1
 11 = KERNAL ROM 2</text>
-<text x="271.78" y="78.74" size="1.778" layer="97">$0000:bit 7: 1 = slow, 0 = fast</text>
-<text x="172.72" y="317.5" size="1.778" layer="97">$0001:bit0 = LORAM
+<text x="170.18" y="327.66" size="1.778" layer="97">$0001:bit0 = LORAM
 $0001:bit1 = HIRAM
 $0001:bit2 = CHAREN</text>
 <text x="147.32" y="297.18" size="1.778" layer="97">IC8 enable is most likely pulled
 low on first write to $0000</text>
-<text x="271.78" y="106.68" size="1.778" layer="97">IC12:
+<text x="454.66" y="30.48" size="2.54" layer="95">Reverse Engineered by: Jim Brain</text>
+<text x="276.86" y="76.2" size="1.778" layer="97">$0000:bit 7: 1 = slow, 0 = fast</text>
+<text x="276.86" y="104.14" size="1.778" layer="97">U4:
 O0 = 1;
 O1 = 1;
 O2 = PHI0'  + A15'  + R/W'  + /HIRAM' A13  + A14' A13'  + A13' A12'  + /HIRAM' /LORAM'  + A14' /LORAM'  + A13' /CHAREN;
@@ -9043,24 +9044,24 @@ O3 = A15  + A14  + A13  + A12  + A11  + A10  + R/W ;
 O4 = PHI0'  + R/W  + A15 A14 A13' A12 /CHAREN' + /HIRAM' A15 A14 A13' A12 /LORAM' ;
 O5 = PHI0'  + A15'  + A14'  + A13  + A12'  + /CHAREN' + /HIRAM' /LORAM' ;
 O7 = PHI0'  + A15'  + /HIRAM A14 A13 R/W  + /HIRAM A14 A12 R/W  + /HIRAM A13 /LORAM R/W  + A14 A13' A12 /LORAM R/W  + /HIRAM A14 A13' A12 /CHAREN + A14 A13' A12 /LORAM /CHAREN;</text>
-<text x="271.78" y="35.56" size="1.778" layer="97">IC13:
-O0 = A1  + A0  + PHI0'  + /RESET'  + /eq000X;
-O1 = PHI0'  + /RESET'  + /eq000X;
-O2 = A1  + A0'  + PHI0'  + /RESET'  + /eq000X;
-O3 = PHI0'  + A15 ;
-O4 = 1;
-O5 = DISABLE' ;
-O6 = A14 A13'  + A14 SEL_ROM' ;
-O7 = A14 A13 ;
+<text x="276.86" y="33.02" size="1.778" layer="97">U1:
+
+CLK_WR_0 = A0  + A1  + nEQ000X + nRESET'  + PHI0' ;
+nEN_0001 = nEQ000X + nRESET'  + PHI0' ;
+CLK_WR_1 = A0'  + A1  + nEQ000X + nRESET'  + PHI0' ;
+nCE_ROM1 = A15  + PHI0' ;
+nSO = 1;
+nRDY = nDISABLE' ;
+A13_ROM = A14 ROM_SEL'  + A14 A13' ;
+A14_ROM = A14 A13 ;
 </text>
-<text x="271.78" y="83.82" size="1.778" layer="97">IC12 (optimized):
+<text x="276.86" y="81.28" size="1.778" layer="97">U4 (optimized):
 O2 = PHI0'  + A15'  + R/W'  + /HIRAM' A13  + A14' A13'  + A13' A12'  + /HIRAM' /LORAM'  + A14' /LORAM'  + A13' /CHAREN;
 
 O3 = not(!A15 &amp; !A14 &amp; !A13 &amp; !A12 &amp; !A11 &amp; !A10 &amp; !R/W);
 O4 = not(!R/W &amp; PHI0 &amp; !(A15 &amp; A14 &amp; !A13 &amp; A12))
 O5 = not(_HIRAM | _LORAM) &amp; A15 &amp; A14 &amp; !A13 &amp; A12 &amp; _CHAREN);
 O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A14 | !A12 | !R/W) &amp; (!/HIRAM | !A13 | !/LORAM | !R/W) &amp; (!A14 | A13 | !A12 | !/LORAM | !R/W) &amp; (!/HIRAM | !A14 | A13 | !A12 | !/CHAREN) &amp; (!A14 | A13 | !A12 | !/LORAM | !/CHAREN));</text>
-<text x="454.66" y="30.48" size="2.54" layer="95">Reverse Engineered by: Jim Brain</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="119.38" y="337.82" rot="R90"/>
@@ -9573,7 +9574,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC13" gate="G$1" pin="O5"/>
 </segment>
 </net>
-<net name="ROM_A13" class="0">
+<net name="A13_ROM" class="0">
 <segment>
 <wire x1="220.98" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="157.48" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
@@ -9587,7 +9588,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC13" gate="G$1" pin="O6"/>
 </segment>
 </net>
-<net name="ROM_A14" class="0">
+<net name="A14_ROM" class="0">
 <segment>
 <wire x1="220.98" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="154.94" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
@@ -9662,7 +9663,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I1"/>
 </segment>
 </net>
-<net name="!RAM1_CE" class="0">
+<net name="!CE_RAM1" class="0">
 <segment>
 <wire x1="147.32" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="162.56" y="144.78" size="1.27" layer="95" xref="yes"/>
@@ -9855,7 +9856,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC10" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="!RAM1_WE" class="0">
+<net name="!WE_RAM1" class="0">
 <segment>
 <wire x1="147.32" y1="218.44" x2="162.56" y2="218.44" width="0.1524" layer="91"/>
 <label x="162.56" y="218.44" size="1.27" layer="95" xref="yes"/>
@@ -9891,7 +9892,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I9"/>
 </segment>
 </net>
-<net name="!RAM2_WE" class="0">
+<net name="!WE_RAM2" class="0">
 <segment>
 <wire x1="147.32" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
 <label x="162.56" y="203.2" size="1.27" layer="95" xref="yes"/>
@@ -9903,7 +9904,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC17" gate="A" pin="!WE"/>
 </segment>
 </net>
-<net name="!RAM2_CE" class="0">
+<net name="!CE_RAM2" class="0">
 <segment>
 <wire x1="147.32" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <label x="162.56" y="170.18" size="1.27" layer="95" xref="yes"/>
@@ -9947,7 +9948,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC9" gate="A" pin="CLK"/>
 </segment>
 </net>
-<net name="!WRITE_$DXXX" class="0">
+<net name="!WR_DXXX" class="0">
 <segment>
 <wire x1="147.32" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
 <label x="162.56" y="177.8" size="1.27" layer="95" xref="yes"/>
@@ -10025,7 +10026,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I0"/>
 </segment>
 </net>
-<net name="!EN_$0001" class="0">
+<net name="!EN_0001" class="0">
 <segment>
 <wire x1="121.92" y1="302.26" x2="106.68" y2="302.26" width="0.1524" layer="91"/>
 <label x="106.68" y="302.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -10063,7 +10064,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="O3"/>
 </segment>
 </net>
-<net name="CLK_WRITE_$0000" class="0">
+<net name="CLK_WR_0000" class="0">
 <segment>
 <wire x1="147.32" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 <label x="162.56" y="152.4" size="1.27" layer="95" xref="yes"/>
@@ -10075,7 +10076,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC9" gate="B" pin="CLK"/>
 </segment>
 </net>
-<net name="CLK_WRITE_$0001" class="0">
+<net name="CLK_WR_0001" class="0">
 <segment>
 <wire x1="121.92" y1="299.72" x2="106.68" y2="299.72" width="0.1524" layer="91"/>
 <label x="106.68" y="299.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -10121,7 +10122,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I8"/>
 </segment>
 </net>
-<net name="SEL_ROM" class="0">
+<net name="ROM_SEL" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="104.14" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
@@ -10239,7 +10240,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC3" gate="A" pin="CLK"/>
 </segment>
 </net>
-<net name="!ROM_OE" class="0">
+<net name="!OE_ROM" class="0">
 <segment>
 <wire x1="147.32" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 <label x="162.56" y="182.88" size="1.27" layer="95" xref="yes"/>

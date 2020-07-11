@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -9029,13 +9029,14 @@ Based on the following sources:
 01 = Charactor ROM (bottom half unused)
 10 = KERNAL ROM 1
 11 = KERNAL ROM 2</text>
-<text x="271.78" y="78.74" size="1.778" layer="97">$0000:bit 7: 1 = slow, 0 = fast</text>
 <text x="172.72" y="317.5" size="1.778" layer="97">$0001:bit0 = LORAM
 $0001:bit1 = HIRAM
 $0001:bit2 = CHAREN</text>
 <text x="147.32" y="297.18" size="1.778" layer="97">IC8 enable is most likely pulled
 low on first write to $0000</text>
-<text x="271.78" y="106.68" size="1.778" layer="97">IC12:
+<text x="454.66" y="30.48" size="2.54" layer="95">Reverse Engineered by: Jim Brain</text>
+<text x="276.86" y="78.74" size="1.778" layer="97">$0000:bit 7: 1 = slow, 0 = fast</text>
+<text x="276.86" y="106.68" size="1.778" layer="97">U4:
 O0 = 1;
 O1 = 1;
 O2 = PHI0'  + A15'  + R/W'  + /HIRAM' A13  + A14' A13'  + A13' A12'  + /HIRAM' /LORAM'  + A14' /LORAM'  + A13' /CHAREN;
@@ -9043,24 +9044,24 @@ O3 = A15  + A14  + A13  + A12  + A11  + A10  + R/W ;
 O4 = PHI0'  + R/W  + A15 A14 A13' A12 /CHAREN' + /HIRAM' A15 A14 A13' A12 /LORAM' ;
 O5 = PHI0'  + A15'  + A14'  + A13  + A12'  + /CHAREN' + /HIRAM' /LORAM' ;
 O7 = PHI0'  + A15'  + /HIRAM A14 A13 R/W  + /HIRAM A14 A12 R/W  + /HIRAM A13 /LORAM R/W  + A14 A13' A12 /LORAM R/W  + /HIRAM A14 A13' A12 /CHAREN + A14 A13' A12 /LORAM /CHAREN;</text>
-<text x="271.78" y="35.56" size="1.778" layer="97">IC13:
-O0 = A1  + A0  + PHI0'  + /RESET'  + /eq000X;
-O1 = PHI0'  + /RESET'  + /eq000X;
-O2 = A1  + A0'  + PHI0'  + /RESET'  + /eq000X;
-O3 = PHI0'  + A15 ;
-O4 = 1;
-O5 = DISABLE' ;
-O6 = A14 A13'  + A14 SEL_ROM' ;
-O7 = A14 A13 ;
+<text x="276.86" y="35.56" size="1.778" layer="97">U1:
+
+CLK_WR_0 = A0  + A1  + nEQ000X + nRESET'  + PHI0' ;
+nEN_0001 = nEQ000X + nRESET'  + PHI0' ;
+CLK_WR_1 = A0'  + A1  + nEQ000X + nRESET'  + PHI0' ;
+nCE_ROM1 = A15  + PHI0' ;
+nSO = 1;
+nRDY = nDISABLE' ;
+A13_ROM = A14 ROM_SEL'  + A14 A13' ;
+A14_ROM = A14 A13 ;
 </text>
-<text x="271.78" y="83.82" size="1.778" layer="97">IC12 (optimized):
+<text x="276.86" y="83.82" size="1.778" layer="97">U4 (optimized):
 O2 = PHI0'  + A15'  + R/W'  + /HIRAM' A13  + A14' A13'  + A13' A12'  + /HIRAM' /LORAM'  + A14' /LORAM'  + A13' /CHAREN;
 
 O3 = not(!A15 &amp; !A14 &amp; !A13 &amp; !A12 &amp; !A11 &amp; !A10 &amp; !R/W);
 O4 = not(!R/W &amp; PHI0 &amp; !(A15 &amp; A14 &amp; !A13 &amp; A12))
 O5 = not(_HIRAM | _LORAM) &amp; A15 &amp; A14 &amp; !A13 &amp; A12 &amp; _CHAREN);
 O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A14 | !A12 | !R/W) &amp; (!/HIRAM | !A13 | !/LORAM | !R/W) &amp; (!A14 | A13 | !A12 | !/LORAM | !R/W) &amp; (!/HIRAM | !A14 | A13 | !A12 | !/CHAREN) &amp; (!A14 | A13 | !A12 | !/LORAM | !/CHAREN));</text>
-<text x="454.66" y="30.48" size="2.54" layer="95">Reverse Engineered by: Jim Brain</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="119.38" y="337.82" rot="R90"/>
@@ -9573,7 +9574,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC13" gate="G$1" pin="O5"/>
 </segment>
 </net>
-<net name="ROM_A13" class="0">
+<net name="A13_ROM" class="0">
 <segment>
 <wire x1="220.98" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="157.48" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
@@ -9587,7 +9588,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC13" gate="G$1" pin="O6"/>
 </segment>
 </net>
-<net name="ROM_A14" class="0">
+<net name="A14_ROM" class="0">
 <segment>
 <wire x1="220.98" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="154.94" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
@@ -9662,7 +9663,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I1"/>
 </segment>
 </net>
-<net name="!RAM1_CE" class="0">
+<net name="!CE_RAM1" class="0">
 <segment>
 <wire x1="147.32" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="162.56" y="144.78" size="1.27" layer="95" xref="yes"/>
@@ -9855,7 +9856,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC10" gate="B" pin="O"/>
 </segment>
 </net>
-<net name="!RAM1_WE" class="0">
+<net name="!WE_RAM1" class="0">
 <segment>
 <wire x1="147.32" y1="218.44" x2="162.56" y2="218.44" width="0.1524" layer="91"/>
 <label x="162.56" y="218.44" size="1.27" layer="95" xref="yes"/>
@@ -9891,7 +9892,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I9"/>
 </segment>
 </net>
-<net name="!RAM2_WE" class="0">
+<net name="!WE_RAM2" class="0">
 <segment>
 <wire x1="147.32" y1="203.2" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
 <label x="162.56" y="203.2" size="1.27" layer="95" xref="yes"/>
@@ -9903,7 +9904,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC17" gate="A" pin="!WE"/>
 </segment>
 </net>
-<net name="!RAM2_CE" class="0">
+<net name="!CE_RAM2" class="0">
 <segment>
 <wire x1="147.32" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <label x="162.56" y="170.18" size="1.27" layer="95" xref="yes"/>
@@ -9947,7 +9948,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC9" gate="A" pin="CLK"/>
 </segment>
 </net>
-<net name="!WRITE_$DXXX" class="0">
+<net name="!WR_DXXX" class="0">
 <segment>
 <wire x1="147.32" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
 <label x="162.56" y="177.8" size="1.27" layer="95" xref="yes"/>
@@ -10025,7 +10026,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I0"/>
 </segment>
 </net>
-<net name="!EN_$0001" class="0">
+<net name="!EN_0001" class="0">
 <segment>
 <wire x1="121.92" y1="302.26" x2="106.68" y2="302.26" width="0.1524" layer="91"/>
 <label x="106.68" y="302.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -10063,7 +10064,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="O3"/>
 </segment>
 </net>
-<net name="CLK_WRITE_$0000" class="0">
+<net name="CLK_WR_0000" class="0">
 <segment>
 <wire x1="147.32" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 <label x="162.56" y="152.4" size="1.27" layer="95" xref="yes"/>
@@ -10075,7 +10076,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC9" gate="B" pin="CLK"/>
 </segment>
 </net>
-<net name="CLK_WRITE_$0001" class="0">
+<net name="CLK_WR_0001" class="0">
 <segment>
 <wire x1="121.92" y1="299.72" x2="106.68" y2="299.72" width="0.1524" layer="91"/>
 <label x="106.68" y="299.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -10121,7 +10122,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC12" gate="G$1" pin="I8"/>
 </segment>
 </net>
-<net name="SEL_ROM" class="0">
+<net name="ROM_SEL" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="104.14" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
@@ -10239,7 +10240,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <pinref part="IC3" gate="A" pin="CLK"/>
 </segment>
 </net>
-<net name="!ROM_OE" class="0">
+<net name="!OE_ROM" class="0">
 <segment>
 <wire x1="147.32" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 <label x="162.56" y="182.88" size="1.27" layer="95" xref="yes"/>
