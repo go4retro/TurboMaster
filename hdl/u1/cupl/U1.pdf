@@ -1,0 +1,193 @@
+{COMPONENT C:\USERS\BRAIN\PROJECTS\TURBOMASTER\HDL\U1\U1.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Sat Jul 11 03:00:50 2020 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P A0 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P PHI0 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P NRESET {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A15 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A14 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P A13 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P DISABLE {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P ROM_SEL {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P NEQ000X {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P CLK_WR0 {Pt "I/O"}{Lq 0}{Ploc 350 20}}
+   {P NEN_0001 {Pt "I/O"}{Lq 0}{Ploc 350 40}}
+   {P CLK_WR1 {Pt "I/O"}{Lq 0}{Ploc 350 60}}
+   {P NCE_RAM1 {Pt "I/O"}{Lq 0}{Ploc 350 80}}
+   {P NSO {Pt "I/O"}{Lq 0}{Ploc 350 100}}
+   {P NRDY {Pt "I/O"}{Lq 0}{Ploc 350 120}}
+   {P ROM_A13 {Pt "I/O"}{Lq 0}{Ploc 350 140}}
+   {P ROM_A14 {Pt "I/O"}{Lq 0}{Ploc 350 160}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 225 230}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 330 30}
+   {Pnl 330 50}
+   {Pnl 330 70}
+   {Pnl 330 90}
+   {Pnl 330 110}
+   {Pnl 330 130}
+   {Pnl 330 150}
+   {Pnl 330 170}
+
+   {Sd A 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 220 320 0}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 320 20 350 20}
+   {L 320 40 350 40}
+   {L 320 60 350 60}
+   {L 320 80 350 80}
+   {L 320 100 350 100}
+   {L 320 120 350 120}
+   {L 320 140 350 140}
+   {L 320 160 350 160}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "A1" 140 200}
+   {T "A0" 140 180}
+   {T "PHI0" 140 160}
+   {T "NRESET" 140 140}
+   {T "A15" 140 120}
+   {T "A14" 140 100}
+   {T "A13" 140 80}
+   {T "DISABLE" 140 60}
+   {T "ROM_SEL" 140 40}
+   {T "NEQ000X" 140 20}
+   [Tj "RC"]
+   {T "CLK_WR0" 310 20}
+   {T "NEN_0001" 310 40}
+   {T "CLK_WR1" 310 60}
+   {T "NCE_RAM1" 310 80}
+   {T "NSO" 310 100}
+   {T "NRDY" 310 120}
+   {T "ROM_A13" 310 140}
+   {T "ROM_A14" 310 160}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G16V8AS" 225 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\BRAIN\PROJECTS\TURBOMASTER\HDL\U1\U1 225 220}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N A1
+   }
+   {N A0
+   }
+   {N PHI0
+   }
+   {N NRESET
+   }
+   {N A15
+   }
+   {N A14
+   }
+   {N A13
+   }
+   {N DISABLE
+   }
+   {N ROM_SEL
+   }
+   {N NEQ000X
+   }
+   {N CLK_WR0
+   }
+   {N NEN_0001
+   }
+   {N CLK_WR1
+   }
+   {N NCE_RAM1
+   }
+   {N NSO
+   }
+   {N NRDY
+   }
+   {N ROM_A13
+   }
+   {N ROM_A14
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

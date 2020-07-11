@@ -1,0 +1,51 @@
+%SIGNAL
+PIN   2 =  A0 
+PIN   1 =  A1 
+PIN   7 =  A13 
+PIN   6 =  A14 
+PIN   5 =  A15 
+PIN  12 =  CLK_WR_0000 
+PIN  14 =  CLK_WR_0001 
+PIN   8 =  DISABLE 
+PIN  17 =  NRDY 
+PIN   3 =  PHI0 
+PIN  18 =  ROM_A13 
+PIN  19 =  ROM_A14 
+PIN   9 =  ROM_SEL 
+PIN  15 =  nCE_RAM1 
+PIN  13 =  nEN_0001 
+PIN  11 =  nEQ000X 
+PIN   4 =  nRESET 
+PIN  16 =  nSO 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!CLK_WR_0000 =>
+    !A0 & !A1 & PHI0 & !nEQ000X & nRESET
+
+!CLK_WR_0001 =>
+    A0 & !A1 & PHI0 & !nEQ000X & nRESET
+
+!NRDY =>
+    DISABLE
+
+ROM_A13 =>
+    A13 & A14 & !ROM_SEL
+  # !A13 & A14
+
+ROM_A14 =>
+    A13 & A14
+
+!nCE_RAM1 =>
+    !A15 & PHI0
+
+!nEN_0001 =>
+    PHI0 & !nEQ000X & nRESET
+
+nSO =>
+    1 
+
+%END

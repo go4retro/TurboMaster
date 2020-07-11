@@ -1,0 +1,49 @@
+Name     u1;
+PartNo   ;
+Date     ;
+Revision ;
+Designer ;
+Company  ;
+Assembly ;
+Location ;
+Device   g16v8a;
+
+/* Dedicated input pins */
+
+pin 1   = A1;          /* Input */
+pin 2   = A0;          /* Input */
+pin 3   = PHI0;        /* Input */
+pin 4   = nRESET;      /* Input */
+pin 5   = A15;         /* Input */
+pin 6   = A14;         /* Input */
+pin 7   = A13;         /* Input */
+pin 8   = DISABLE;     /* Input */
+pin 9   = ROM_SEL;     /* Input */
+pin 11  = nEQ000X;     /* Input */
+
+/* Programmable output pins */
+
+pin 12  = CLK_WR_0000; /* Combinatorial output */
+pin 13  = nEN_0001;    /* Combinatorial output */
+pin 14  = CLK_WR_0001; /* Combinatorial output */
+pin 15  = nCE_RAM1;    /* Combinatorial output */
+pin 16  = nSO;         /* Fixed high output */
+pin 17  = NRDY;        /* Combinatorial output */
+pin 18  = ROM_A13;     /* Combinatorial output */
+pin 19  = ROM_A14;     /* Combinatorial output */
+
+/* Output equations */
+
+ ROM_A14     =  A14         &  A13;
+ ROM_A13     =  A14         & !A13         & !ROM_SEL 
+             #  A14         &  A13         & !ROM_SEL 
+             #  A14         & !A13         &  ROM_SEL;
+!NRDY        =  DISABLE;
+ nSO         = 'b'1;
+!nCE_RAM1    =  PHI0        & !A15;
+!CLK_WR_0001 = !A1          &  A0          &  PHI0        &  nRESET      & !nEQ000X;
+!nEN_0001    =  PHI0        &  nRESET      & !nEQ000X;
+!CLK_WR_0000 = !A1          & !A0          &  PHI0        &  nRESET      & !nEQ000X;
+
+/* End */
+
