@@ -9010,8 +9010,8 @@ Based on the following sources:
 <part name="IC9" library="74xx-us-jlb" deviceset="74*74" device="N" technology="HCT"/>
 <part name="IC10" library="74xx-us-jlb" deviceset="74*32" device="N" technology="HCT"/>
 <part name="IC19" library="commodore" deviceset="65*02" device="-RP" technology="C" value="65C02"/>
-<part name="IC12" library="pal" deviceset="16L8" device="-RP"/>
-<part name="IC13" library="pal" deviceset="16L8" device="-RP"/>
+<part name="U4" library="pal" deviceset="16L8" device="-RP"/>
+<part name="U1" library="pal" deviceset="16L8" device="-RP"/>
 <part name="IC14" library="pal" deviceset="16R4" device="-RP"/>
 <part name="IC15" library="pal" deviceset="16R6" device="-RP"/>
 <part name="IC18" library="memory-hitachi" deviceset="27C256AG" device="-RP" value="27C256"/>
@@ -9124,8 +9124,8 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <instance part="IC10" gate="C" x="134.62" y="218.44"/>
 <instance part="IC10" gate="D" x="134.62" y="203.2"/>
 <instance part="IC19" gate="A" x="233.68" y="368.3"/>
-<instance part="IC12" gate="G$1" x="134.62" y="177.8"/>
-<instance part="IC13" gate="G$1" x="134.62" y="142.24"/>
+<instance part="U4" gate="G$1" x="134.62" y="177.8"/>
+<instance part="U1" gate="G$1" x="134.62" y="142.24"/>
 <instance part="IC14" gate="G$1" x="134.62" y="104.14"/>
 <instance part="IC15" gate="G$1" x="134.62" y="63.5"/>
 <instance part="IC18" gate="G$1" x="236.22" y="170.18"/>
@@ -9571,7 +9571,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="139.7" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
 <label x="162.56" y="139.7" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O5"/>
+<pinref part="U1" gate="G$1" pin="O5"/>
 </segment>
 </net>
 <net name="A13_ROM" class="0">
@@ -9585,7 +9585,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="137.16" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
 <label x="162.56" y="137.16" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O6"/>
+<pinref part="U1" gate="G$1" pin="O6"/>
 </segment>
 </net>
 <net name="A14_ROM" class="0">
@@ -9599,7 +9599,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
 <label x="162.56" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O7"/>
+<pinref part="U1" gate="G$1" pin="O7"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -9626,7 +9626,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="121.92" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 <label x="106.68" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="I3"/>
+<pinref part="U1" gate="G$1" pin="I3"/>
 </segment>
 </net>
 <net name="!SO" class="0">
@@ -9638,7 +9638,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
 <label x="162.56" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O4"/>
+<pinref part="U1" gate="G$1" pin="O4"/>
 </segment>
 </net>
 <net name="PHI0" class="0">
@@ -9650,7 +9650,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="121.92" y1="147.32" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
 <label x="106.68" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="I2"/>
+<pinref part="U1" gate="G$1" pin="I2"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="403.86" x2="203.2" y2="403.86" width="0.1524" layer="91"/>
@@ -9660,14 +9660,14 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="121.92" y1="185.42" x2="106.68" y2="185.42" width="0.1524" layer="91"/>
 <label x="106.68" y="185.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="I1"/>
+<pinref part="U4" gate="G$1" pin="I1"/>
 </segment>
 </net>
 <net name="!CE_RAM1" class="0">
 <segment>
 <wire x1="147.32" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="162.56" y="144.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O3"/>
+<pinref part="U1" gate="G$1" pin="O3"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
@@ -9889,7 +9889,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="111.76" y1="165.1" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="165.1" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
 <label x="106.68" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="I9"/>
+<pinref part="U4" gate="G$1" pin="I9"/>
 </segment>
 </net>
 <net name="!WE_RAM2" class="0">
@@ -9908,7 +9908,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <label x="162.56" y="170.18" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O7"/>
+<pinref part="U4" gate="G$1" pin="O7"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="205.74" x2="106.68" y2="205.74" width="0.1524" layer="91"/>
@@ -9952,7 +9952,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
 <label x="162.56" y="177.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O4"/>
+<pinref part="U4" gate="G$1" pin="O4"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="58.42" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
@@ -10023,7 +10023,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="121.92" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
 <label x="106.68" y="187.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="I0"/>
+<pinref part="U4" gate="G$1" pin="I0"/>
 </segment>
 </net>
 <net name="!EN_0001" class="0">
@@ -10035,7 +10035,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="149.86" x2="162.56" y2="149.86" width="0.1524" layer="91"/>
 <label x="162.56" y="149.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O1"/>
+<pinref part="U1" gate="G$1" pin="O1"/>
 </segment>
 </net>
 <net name="!=00000000000000XX" class="0">
@@ -10049,7 +10049,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="114.3" y1="129.54" x2="114.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
 <label x="106.68" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="I9"/>
+<pinref part="U1" gate="G$1" pin="I9"/>
 </segment>
 </net>
 <net name="!=000000XXXXXXXXXX" class="0">
@@ -10061,14 +10061,14 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="180.34" x2="162.56" y2="180.34" width="0.1524" layer="91"/>
 <label x="162.56" y="180.34" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O3"/>
+<pinref part="U4" gate="G$1" pin="O3"/>
 </segment>
 </net>
 <net name="CLK_WR_0000" class="0">
 <segment>
 <wire x1="147.32" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 <label x="162.56" y="152.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O0"/>
+<pinref part="U1" gate="G$1" pin="O0"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="254" x2="106.68" y2="254" width="0.1524" layer="91"/>
@@ -10085,7 +10085,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
 <label x="162.56" y="147.32" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="O2"/>
+<pinref part="U1" gate="G$1" pin="O2"/>
 </segment>
 </net>
 <net name="!FLAG_CHAREN" class="0">
@@ -10101,7 +10101,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
 <label x="162.56" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O6"/>
+<pinref part="U4" gate="G$1" pin="O6"/>
 </segment>
 </net>
 <net name="!FLAG_LORAM" class="0">
@@ -10119,7 +10119,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="109.22" y1="167.64" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="167.64" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
 <label x="106.68" y="165.1" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="I8"/>
+<pinref part="U4" gate="G$1" pin="I8"/>
 </segment>
 </net>
 <net name="ROM_SEL" class="0">
@@ -10137,7 +10137,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="111.76" y1="132.08" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <label x="106.68" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="I8"/>
+<pinref part="U1" gate="G$1" pin="I8"/>
 </segment>
 </net>
 <net name="FLAG_SLOW/!FAST" class="0">
@@ -10175,7 +10175,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="109.22" y1="134.62" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 <label x="106.68" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC13" gate="G$1" pin="I7"/>
+<pinref part="U1" gate="G$1" pin="I7"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -10244,7 +10244,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 <label x="162.56" y="182.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O2"/>
+<pinref part="U4" gate="G$1" pin="O2"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="147.32" x2="203.2" y2="147.32" width="0.1524" layer="91"/>
@@ -10595,7 +10595,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="121.92" y1="149.86" x2="109.22" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="152.4" x2="109.22" y2="149.86" width="0.1524" layer="91"/>
 <label x="109.22" y="149.86" size="1.778" layer="95"/>
-<pinref part="IC13" gate="G$1" pin="I1"/>
+<pinref part="U1" gate="G$1" pin="I1"/>
 </segment>
 <segment>
 <wire x1="205.74" y1="251.46" x2="220.98" y2="251.46" width="0.1524" layer="91"/>
@@ -10633,7 +10633,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="121.92" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="154.94" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <label x="109.22" y="152.4" size="1.778" layer="95"/>
-<pinref part="IC13" gate="G$1" pin="I0"/>
+<pinref part="U1" gate="G$1" pin="I0"/>
 </segment>
 <segment>
 <wire x1="205.74" y1="248.92" x2="220.98" y2="248.92" width="0.1524" layer="91"/>
@@ -10969,7 +10969,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="167.64" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="170.18" x2="121.92" y2="170.18" width="0.1524" layer="91"/>
 <label x="109.22" y="170.18" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I7"/>
+<pinref part="U4" gate="G$1" pin="I7"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="381" x2="264.16" y2="383.54" width="0.1524" layer="91"/>
@@ -11007,7 +11007,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="170.18" x2="109.22" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="172.72" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
 <label x="109.22" y="172.72" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I6"/>
+<pinref part="U4" gate="G$1" pin="I6"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="378.46" x2="264.16" y2="381" width="0.1524" layer="91"/>
@@ -11045,7 +11045,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="172.72" x2="109.22" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="175.26" x2="121.92" y2="175.26" width="0.1524" layer="91"/>
 <label x="109.22" y="175.26" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I5"/>
+<pinref part="U4" gate="G$1" pin="I5"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="375.92" x2="264.16" y2="378.46" width="0.1524" layer="91"/>
@@ -11077,13 +11077,13 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="175.26" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="177.8" x2="121.92" y2="177.8" width="0.1524" layer="91"/>
 <label x="109.22" y="177.8" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I4"/>
+<pinref part="U4" gate="G$1" pin="I4"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="134.62" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
 <label x="109.22" y="137.16" size="1.778" layer="95"/>
-<pinref part="IC13" gate="G$1" pin="I6"/>
+<pinref part="U1" gate="G$1" pin="I6"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="373.38" x2="264.16" y2="375.92" width="0.1524" layer="91"/>
@@ -11115,13 +11115,13 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="177.8" x2="109.22" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="180.34" x2="121.92" y2="180.34" width="0.1524" layer="91"/>
 <label x="109.22" y="180.34" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I3"/>
+<pinref part="U4" gate="G$1" pin="I3"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="137.16" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="139.7" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
 <label x="109.22" y="139.7" size="1.778" layer="95"/>
-<pinref part="IC13" gate="G$1" pin="I5"/>
+<pinref part="U1" gate="G$1" pin="I5"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="370.84" x2="264.16" y2="373.38" width="0.1524" layer="91"/>
@@ -11153,13 +11153,13 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <wire x1="106.68" y1="180.34" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="182.88" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
 <label x="109.22" y="182.88" size="1.778" layer="95"/>
-<pinref part="IC12" gate="G$1" pin="I2"/>
+<pinref part="U4" gate="G$1" pin="I2"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="139.7" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <label x="109.22" y="142.24" size="1.778" layer="95"/>
-<pinref part="IC13" gate="G$1" pin="I4"/>
+<pinref part="U1" gate="G$1" pin="I4"/>
 </segment>
 <segment>
 <wire x1="266.7" y1="368.3" x2="264.16" y2="370.84" width="0.1524" layer="91"/>
@@ -11723,7 +11723,7 @@ O7 = not(PHI0 &amp; A15 &amp; (!/HIRAM | !A14 | !A13 | !R/W) &amp; (!/HIRAM | !A
 <segment>
 <wire x1="147.32" y1="175.26" x2="162.56" y2="175.26" width="0.1524" layer="91"/>
 <label x="162.56" y="175.26" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC12" gate="G$1" pin="O5"/>
+<pinref part="U4" gate="G$1" pin="O5"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>

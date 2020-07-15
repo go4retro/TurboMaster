@@ -1,0 +1,83 @@
+
+*******************************************************************************
+                                      u4
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Tue Jul 14 21:17:53 2020
+Name            u4
+Partno          
+Revision        
+Date            
+Designer        
+Company         
+Assembly        
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+!ACC_IO =>
+    A12 & !A13 & A14 & A15 & PHI0 & nCHAREN & nLORAM
+  # A12 & !A13 & A14 & A15 & PHI0 & nCHAREN & nHIRAM
+
+!CE_RAM2 =>
+    A15 & PHI0 & !R_nW & !nCHAREN
+  # !A12 & !A13 & A15 & PHI0
+  # A15 & PHI0 & !nHIRAM & !nLORAM
+  # !A14 & A15 & PHI0 & !nLORAM
+  # A13 & A15 & PHI0 & !nHIRAM
+  # A13 & A15 & PHI0 & !R_nW
+  # !A13 & !A14 & A15 & PHI0
+
+!EQ_00XX =>
+    !A10 & !A11 & !A12 & !A13 & !A14 & !A15 & !R_nW
+
+!OE_ROM =>
+    A12 & !A13 & A14 & A15 & PHI0 & R_nW & !nCHAREN & nLORAM
+  # A12 & A14 & A15 & PHI0 & R_nW & !nCHAREN & nHIRAM
+  # A13 & A15 & PHI0 & R_nW & nHIRAM & nLORAM
+  # A13 & A14 & A15 & PHI0 & R_nW & nHIRAM
+
+!WR_DXXX =>
+    PHI0 & !R_nW & nCHAREN & nLORAM
+  # PHI0 & !R_nW & nCHAREN & nHIRAM
+  # !A15 & PHI0 & !R_nW
+  # !A14 & PHI0 & !R_nW
+  # A13 & PHI0 & !R_nW
+  # !A12 & PHI0 & !R_nW
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A10                         8        V        -       -       -     
+    A11                         7        V        -       -       -     
+    A12                         6        V        -       -       -     
+    A13                         5        V        -       -       -     
+    A14                         4        V        -       -       -     
+    A15                         3        V        -       -       -     
+ !  ACC_IO                      17       V        2       8       4     
+ !  CE_RAM2                     19       V        7       8       4     
+ !  EQ_00XX                     15       V        1       8       4     
+ !  OE_ROM                      14       V        4       8       4     
+    PHI0                        2        V        -       -       -     
+    R_nW                        11       V        -       -       -     
+ !  WR_DXXX                     16       V        6       8       4     
+    nCHAREN                     18       V        -       -       -     
+    nHIRAM                      1        V        -       -       -     
+    nLORAM                      9        V        -       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

@@ -1,0 +1,90 @@
+Name     u4;
+PartNo   ;
+Date     ;
+Revision ;
+Designer ;
+Company  ;
+Assembly ;
+Location ;
+Device   g16v8a;
+
+/* 
+Output from Logic Friday (seems inverted)
+
+O0 = 1;
+O1 = 1;
+nOE_ROM = PHI0'  + A15'  + R/W'  + nHIRAM' A13  + A14' A13'  + A13' A12'  + nHIRAM' nLORAM'  + A14' nLORAM'  + A13' nCHAREN;
+nEQ_00XX = A15  + A14  + A13  + A12  + A11  + A10  + R/W ;
+nWR_DXXX = PHI0'  + R/W  + A15 A14 A13' A12 nCHAREN' + nHIRAM' A15 A14 A13' A12 nLORAM' ;
+nACC_IO = PHI0'  + A15'  + A14'  + A13  + A12'  + nCHAREN' + nHIRAM' nLORAM' ;
+nFL_CHEN = 1;
+nCE_RAM2 = PHI0'  + A15'  + nHIRAM A14 A13 R/W  + nHIRAM A14 A12 R/W  + nHIRAM A13 nLORAM R/W  + A14 A13' A12 nLORAM R/W  + nHIRAM A14 A13' A12 nCHAREN + A14 A13' A12 nLORAM nCHAREN;
+
+*/
+
+/* Dedicated input pins */
+
+pin 1   = nHIRAM;       /* Input */
+pin 2   = PHI0;         /* Input */
+pin 3   = A15;          /* Input */
+pin 4   = A14;          /* Input */
+pin 5   = A13;          /* Input */
+pin 6   = A12;          /* Input */
+pin 7   = A11;          /* Input */
+pin 8   = A10;          /* Input */
+pin 9   = nLORAM;       /* Input */
+pin 11  = R_nW;         /* Input */
+pin 18  = nCHAREN;      /* Input */
+
+/* Programmable output pins */
+
+pin 14  = !OE_ROM;      /* Combinatorial output */
+pin 15  = !EQ_00XX;     /* Combinatorial output */
+pin 16  = !WR_DXXX;     /* Fixed high output */
+pin 17  = !ACC_IO;      /* Combinatorial output */
+pin 19  = !CE_RAM2;     /* Combinatorial output */
+
+/* Output equations */
+
+OE_ROM =    !PHI0 
+            # !A15  
+            # !R_nW  
+            # !nHIRAM & A13  
+            # !A14    & !A13     
+            # !A13    & !A12 
+            # !nHIRAM & !nLORAM 
+            # !A14    & !nLORAM  
+            # !A13    & nCHAREN;
+
+EQ_00XX =   A15   
+            # A14   
+            # A13    
+            # A12     
+            # A11  
+            # A10      
+            # R_nW;
+
+WR_DXXX =   !PHI0 
+            # R_nW  
+            # A15     & A14 & !A13 & A12  & !nCHAREN 
+            # !nHIRAM & A15 & A14  & !A13 & A12      & !nLORAM;
+
+ACC_IO =    !PHI0 
+            # !A15  
+            # !A14   
+            # A13     
+            # !A12 
+            # !nCHAREN 
+            # !nHIRAM  & !nLORAM;
+
+CE_RAM2 =   !PHI0 
+            # !A15  
+            # nHIRAM & A14  & A13    & R_nW     
+            # nHIRAM & A14  & A12    & R_nW     
+            # nHIRAM & A13  & nLORAM & R_nW 
+            # A14    & !A13 & A12    & nLORAM & R_nW 
+            # nHIRAM & A14  & !A13   & A12    & nCHAREN
+            # A14    & !A13 & A12    & nLORAM & nCHAREN;
+
+/* End */
+

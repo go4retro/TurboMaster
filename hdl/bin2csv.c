@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define INPUTS 18
+#define INPUTS 11
 #define OUTPUTS 8
      
     void main(int argc, char** argv)

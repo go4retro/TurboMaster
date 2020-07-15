@@ -1,0 +1,97 @@
+Name     u1;
+PartNo   ;
+Date     ;
+Revision ;
+Designer ;
+Company  ;
+Assembly ;
+Location ;
+Device   g16v8a;
+
+/*
+From Logic Friday
+
+CLK_WR_0 = A1  + A0  + PHI0'  + nRESET'  + nEQ000X;
+nEN_0001 = PHI0'  + nRESET'  + nEQ000X;
+CLK_WR_1 = A1  + A0'  + PHI0'  + nRESET'  + nEQ000X;
+nCE_RAM1 = PHI0'  + A15 ;
+nSO = 1;
+nRDY = DISABLE' ;
+A13_ROM = A14 A13'  + A14 ROM_SEL' ;
+A14_ROM = A14 A13 ;
+*/
+
+/* Dedicated input pins */
+
+pin 1   = A1;          /* Input */
+pin 2   = A0;          /* Input */
+pin 3   = PHI0;        /* Input */
+pin 4   = nRESET;      /* Input */
+pin 5   = A15;         /* Input */
+pin 6   = A14;         /* Input */
+pin 7   = A13;         /* Input */
+pin 8   = DISABLE;     /* Input */
+pin 9   = ROM_SEL;     /* Input */
+pin 11  = nEQ000X;     /* Input */
+
+/* Programmable output pins */
+
+pin 12  = CLK_WR_0;    /* Combinatorial output */
+pin 13  = nEN_0001;    /* Combinatorial output */
+pin 14  = CLK_WR_1;    /* Combinatorial output */
+pin 15  = nCE_RAM1;    /* Combinatorial output */
+pin 16  = nSO;         /* Fixed high output */
+pin 17  = NRDY;        /* Combinatorial output */
+pin 18  = A13_ROM;     /* Combinatorial output */
+pin 19  = A14_ROM;     /* Combinatorial output */
+
+/* Output equations */
+
+/* pa equation */
+/*!CLK_WR_0 = !A1          & !A0          &  PHI0        &  nRESET      & !nEQ000X; */
+CLK_WR_0 =  A1
+            # A0  
+            # !PHI0  
+            # !nRESET 
+            # nEQ000X;
+
+/* pa equation */
+/*!nEN_0001    =  PHI0        &  nRESET      & !nEQ000X; */
+nEN_0001 =  !PHI0
+            # !nRESET  
+            # nEQ000X;
+
+/* pa equation */
+/*!CLK_WR_1 = !A1          &  A0          &  PHI0        &  nRESET      & !nEQ000X; */
+CLK_WR_1 =  A1  
+            # !A0  
+            # !PHI0
+            # !nRESET  
+            # nEQ000X;
+
+/* pa equation */
+/*!nCE_RAM1    =  PHI0        & !A15; */
+nCE_RAM1 =  !PHI0  
+            # A15 ;
+
+/* pa equation */
+/* nSO         = 'b'1; */
+nSO =       'b'1;
+
+/* pa equation */
+/*!NRDY        =  DISABLE; */
+nRDY =      !DISABLE ;
+
+/* pa equation */
+/* ROM_A13     =  A14         & !A13         & !ROM_SEL 
+               #  A14         &  A13         & !ROM_SEL 
+               #  A14         & !A13         &  ROM_SEL; */
+A13_ROM =   A14 & !A13  
+            # A14 & !ROM_SEL;
+
+/* pa equation */
+/* ROM_A14     =  A14         &  A13; */
+A14_ROM =   A14 & A13 ;
+
+/* End */
+

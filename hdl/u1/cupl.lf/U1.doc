@@ -1,0 +1,92 @@
+
+*******************************************************************************
+                                      u1
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Tue Jul 14 22:16:17 2020
+Name            u1
+Partno          
+Revision        
+Date            
+Designer        
+Company         
+Assembly        
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+A13_ROM =>
+    A14 & !ROM_SEL
+  # !A13 & A14
+
+A14_ROM =>
+    A13 & A14
+
+CLK_WR_0 =>
+    !nRESET
+  # nEQ000X
+  # !PHI0
+  # A1
+  # A0
+
+CLK_WR_1 =>
+    !nRESET
+  # nEQ000X
+  # !PHI0
+  # A1
+  # !A0
+
+nCE_RAM1 =>
+    !PHI0
+  # A15
+
+nEN_0001 =>
+    !nRESET
+  # nEQ000X
+  # !PHI0
+
+nRDY =>
+    !DISABLE
+
+nSO =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A0                          2        V        -       -       -     
+    A1                          1        V        -       -       -     
+    A13                         7        V        -       -       -     
+    A13_ROM                     18       V        2       8       4     
+    A14                         6        V        -       -       -     
+    A14_ROM                     19       V        1       8       4     
+    A15                         5        V        -       -       -     
+    CLK_WR_0                    12       V        5       8       4     
+    CLK_WR_1                    14       V        5       8       4     
+    DISABLE                     8        V        -       -       -     
+    NRDY                        17       V        -       -       -     
+    PHI0                        3        V        -       -       -     
+    ROM_SEL                     9        V        -       -       -     
+    nCE_RAM1                    15       V        2       8       4     
+    nEN_0001                    13       V        3       8       4     
+    nEQ000X                     11       V        -       -       -     
+    nRDY                        0        I        1       -       -     
+    nRESET                      4        V        -       -       -     
+    nSO                         16       V        1       8       4     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
