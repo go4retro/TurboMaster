@@ -1,1 +1,288 @@
-Error getting file size of `..\u4_256kB.bin'.
+Name     ..\u4_256kB;
+PartNo   ;
+Date     ;
+Revision ;
+Designer ;
+Company  ;
+Assembly ;
+Location ;
+Device   virtual;
+
+/* Dedicated input pins */
+
+pin 1   = nHIRAM;   /* Input */
+pin 2   = PHI0;     /* Input */
+pin 3   = A15;      /* Input */
+pin 4   = A14;      /* Input */
+pin 5   = A13;      /* Input */
+pin 6   = A12;      /* Input */
+pin 7   = A11;      /* Input */
+pin 8   = A10;      /* Input */
+pin 9   = nLORAM;   /* Input */
+pin 11  = R_nW;     /* Input */
+
+/* Programmable output pins */
+
+pin 12  = O0;       /* Unused input */
+pin 13  = O1;       /* Unused input */
+pin 14  = nOE_ROM;  /* Combinatorial output */
+pin 15  = nEQ_00XX; /* Combinatorial output */
+pin 16  = nWR_DXXX; /* Combinatorial output */
+pin 17  = nACC_IO;  /* Combinatorial output */
+pin 18  = nCHAREN;  /* Input */
+pin 19  = nCE_RAM2; /* Combinatorial output */
+
+/* Output equations */
+
+!nCE_RAM2 = !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN;
+!nACC_IO  =  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   &  nCHAREN;
+!nWR_DXXX = !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     & !A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   & !R_nW     &  nCHAREN;
+!nEQ_00XX = !A15      & !A14      & !A13      & !A12      & !A11      & !A10      & !R_nW;
+!nOE_ROM  =  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          # !nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      & !A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   &  R_nW     & !nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      & !nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      & !A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      & !A14      &  A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN 
+          #  nHIRAM   &  PHI0     &  A15      &  A14      &  A13      &  A12      &  nLORAM   &  R_nW     &  nCHAREN;
+
+/* End */
+
