@@ -28,7 +28,7 @@ pin 13  = nEN_0001;    /* Combinatorial output */
 pin 14  = CLK_WR_0001; /* Combinatorial output */
 pin 15  = nCE_RAM1;    /* Combinatorial output */
 pin 16  = nSO;         /* Fixed high output */
-pin 17  = NRDY;        /* Combinatorial output */
+pin 17  = nRDY;        /* Combinatorial output */
 pin 18  = ROM_A13;     /* Combinatorial output */
 pin 19  = ROM_A14;     /* Combinatorial output */
 
@@ -38,7 +38,7 @@ pin 19  = ROM_A14;     /* Combinatorial output */
  ROM_A13     =  A14         & !A13         & !ROM_SEL 
              #  A14         &  A13         & !ROM_SEL 
              #  A14         & !A13         &  ROM_SEL;
-!NRDY        =  DISABLE;
+!nRDY        =  DISABLE;
  nSO         = 'b'1;
 !nCE_RAM1    =  PHI0        & !A15;
 !CLK_WR_0001 = !A1          &  A0          &  PHI0        &  nRESET      & !nEQ000X;

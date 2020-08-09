@@ -41,7 +41,7 @@ pin 13  = nEN_0001;    /* Combinatorial output */
 pin 14  = CLK_WR_1;    /* Combinatorial output */
 pin 15  = nCE_RAM1;    /* Combinatorial output */
 pin 16  = nSO;         /* Fixed high output */
-pin 17  = NRDY;        /* Combinatorial output */
+pin 17  = nRDY;        /* Combinatorial output */
 pin 18  = A13_ROM;     /* Combinatorial output */
 pin 19  = A14_ROM;     /* Combinatorial output */
 

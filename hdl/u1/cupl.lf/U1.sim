@@ -9,12 +9,12 @@ PIN   5 =  A15
 PIN  12 =  CLK_WR_0 
 PIN  14 =  CLK_WR_1 
 PIN   8 =  DISABLE 
-PIN  17 =  NRDY 
 PIN   3 =  PHI0 
 PIN   9 =  ROM_SEL 
 PIN  15 =  nCE_RAM1 
 PIN  13 =  nEN_0001 
 PIN  11 =  nEQ000X 
+PIN  17 =  nRDY 
 PIN   4 =  nRESET 
 PIN  16 =  nSO 
 %END
